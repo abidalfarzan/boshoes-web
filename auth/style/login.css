@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    /* border: none; */
+    /* outline: none; */
+    font-family: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #F3F0CA;
+    color: #192655;
+}
+
+.title h1 {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    background-color: #F3F0CA;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 0px #192655;
+    /* border: 1px solid #192655; */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #192655;
+    z-index: 1000;
+}
+
+form {
+    margin-top: 3rem;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #192655; */
+    background-color: #F3F0CA;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 0px #192655;
+    z-index: 1000;
+}
+
+.inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+.inputs label {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.inputs input {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+}
+
+.input button {
+    padding: 1rem 2rem;
+    background-color: #F3F0CA;
+    color: #192655;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 0px #192655;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+
+.input button:hover {
+    font-size: 2rem;
+    /* rotate: 10deg; */
+}
+
+.input p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}

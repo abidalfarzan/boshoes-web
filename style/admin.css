@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #F3F0CA;
+    color: #192655;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.right {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+}
+
+.left {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+}
+
+.logo img {
+    width: 17rem;
+    /* height: 10rem; */
+    padding: 0.5rem 1.5rem;
+    background: #F3F0CA;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+    z-index: 1000;
+    box-shadow: 5px 5px 0px #192655;
+    transition: 0.5s ease-in-out;
+}
+
+.logo img:hover {
+    width: 19rem;
+    rotate: 10deg;
+}
+
+.logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+}
+
+.logout img {
+    width: 10rem;
+    /* height: 10rem; */
+    padding: 0.5rem 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.logout img:hover {
+    width: 11rem;
+    rotate: 10deg;
+}
+
+.add {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+}
+
+.add img {
+    width: 10rem;
+    /* height: 10rem; */
+    padding: 0.5rem 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.add img:hover {
+    width: 11rem;
+    rotate: 10deg;
+}
+
+.main {
+    margin-top: 3rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.shoes_data {
+    /* width: 100%; */
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #F3F0CA;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 0px #192655;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 80%;
+    height: 50%;
+    border: 1px solid #192655;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    background-color: #F3F0CA;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 0px #192655;
+    margin-bottom: 1rem;
+}
+
+tr {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    border: 1px solid #192655;
+    background: #F3F0CA;
+    z-index: 1000;
+}
+
+th {
+    width: 20%;
+    height: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #192655;
+    z-index: 1000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+td {
+    width: 20%;
+    height: 100%;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #192655;
+    z-index: 1000;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.aksi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+}
+
+.edit {
+    width: 3rem;  
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: #F3F0CA;
+    box-shadow: 5px 5px 0px #192655;
+    color: #192655;
+    cursor: pointer;
+    border: 1px solid #192655;
+    transition: 0.5s ease-in-out;
+}
+
+.delete {
+    width: 3rem;  
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: #F3F0CA;
+    box-shadow: 5px 5px 0px #192655;
+    color: #192655;
+    cursor: pointer;
+    border: 1px solid #192655;
+    transition: 0.5s ease-in-out;
+}
+
+.edit img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.delete img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.delete:hover, .edit:hover {
+    width: 3.5rem;
+    rotate: 10deg;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #192655; */
+    z-index: 1000;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    z-index: 1000;
+}
+
+.content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    z-index: 1000;
+}
+
+.content h1 span {
+    color: #192655;
+    font-weight: bolder;
+}
+
+.content p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    z-index: 1000;
+}
+
+.content button {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    border: 1px solid #192655;
+    border-radius: 1rem;
+    background-color: #F3F0CA;
+    box-shadow: 5px 5px 0px #192655;
+    color: #192655;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s ease-in-out;
+}
+
+.content button a {
+    color: #192655;
+}
+
+.content button:hover {
+    font-size: 2.5rem;
+    rotate: 10deg;
+}
