@@ -6,6 +6,19 @@ include($_SERVER['DOCUMENT_ROOT'] . '/boshoes/db/connect.php');
 function registerUser($username, $email, $password) {
     global $conn;
 
+    // Periksa apakah email sudah terdaftar
+    $stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->store_result();
+
+    if ($stmt->num_rows > 0) {
+        $stmt->close();
+        return "Email sudah terdaftar, silakan gunakan email lain."; // Email sudah digunakan
+    }
+
+    $stmt->close();
+
     // Hash password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
@@ -13,12 +26,15 @@ function registerUser($username, $email, $password) {
     $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $username, $email, $hashedPassword);
 
-    $result = $stmt->execute();
-
-    $stmt->close();
-    $conn->close();
-
-    return $result;
+    if ($stmt->execute()) {
+        $stmt->close();
+        $conn->close();
+        return true; // Registrasi berhasil
+    } else {
+        $stmt->close();
+        $conn->close();
+        return "Terjadi kesalahan saat registrasi. Coba lagi."; // Gagal registrasi
+    }
 }
 
 // Fungsi untuk memeriksa login
