@@ -60,7 +60,7 @@ if (isset($_POST['add'])) {
 
         <div class="menu">
             <a href="../admin.php"><img src="../img/back.png" alt="Back"></a>
-            <h1 class="shoes_title">Edit Produk</h1>
+            <h1 class="shoes_title">Tambah Produk</h1>
         </div>
 
         <form method="POST" enctype="multipart/form-data">

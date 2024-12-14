@@ -1,6 +1,6 @@
 <?php
 require('../db/connect.php');
-include('auth/function.php');
+include('../auth/function.php');
 
 // Periksa apakah user sudah login
 if (!isLoggedIn()) {
